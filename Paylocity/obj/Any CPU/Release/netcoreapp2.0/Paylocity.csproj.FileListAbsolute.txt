@@ -1,0 +1,10 @@
+C:\test\Paylocity\Paylocity\bin\Any CPU\Release\netcoreapp2.0\Paylocity.deps.json
+C:\test\Paylocity\Paylocity\bin\Any CPU\Release\netcoreapp2.0\Paylocity.runtimeconfig.json
+C:\test\Paylocity\Paylocity\bin\Any CPU\Release\netcoreapp2.0\Paylocity.runtimeconfig.dev.json
+C:\test\Paylocity\Paylocity\bin\Any CPU\Release\netcoreapp2.0\Paylocity.dll
+C:\test\Paylocity\Paylocity\bin\Any CPU\Release\netcoreapp2.0\Paylocity.pdb
+C:\test\Paylocity\Paylocity\obj\Any CPU\Release\netcoreapp2.0\Paylocity.csproj.CoreCompileInputs.cache
+C:\test\Paylocity\Paylocity\obj\Any CPU\Release\netcoreapp2.0\Paylocity.AssemblyInfoInputs.cache
+C:\test\Paylocity\Paylocity\obj\Any CPU\Release\netcoreapp2.0\Paylocity.AssemblyInfo.cs
+C:\test\Paylocity\Paylocity\obj\Any CPU\Release\netcoreapp2.0\Paylocity.dll
+C:\test\Paylocity\Paylocity\obj\Any CPU\Release\netcoreapp2.0\Paylocity.pdb

@@ -1,0 +1,64 @@
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+    font-size: 1.5em;
+}
+
+.Rule {
+    font-size: 0.6em;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.Employees li {
+    list-style-type: none;
+    border-bottom: 2px solid black;
+    margin-left: -20px;
+    margin-right: 20px;
+}
+
+.Employees button {
+    margin-left: -20px;
+}
+
+.Employees .Status {
+    color:green;
+}
+
+.Employees .Person {
+    margin-left:0px;
+}
+
+.Employee li .Person {
+    margin-left: 20px;
+    font-size: 0.6em;
+}
+
+.Employee li {
+    font-size: 1.5em;
+    border-bottom: 0px solid black;
+}
+
+.Person {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
