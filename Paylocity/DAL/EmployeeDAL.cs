@@ -76,7 +76,7 @@ namespace Paylocity.DAL
 
         public static IEnumerable<Employee> Get(string lastName)
         {
-            return Employees.Where(person => String.Equals(person.LastName, lastName, StringComparison.OrdinalIgnoreCase));
+            return Employees.Where(person => person.LastName.StartsWith(lastName, StringComparison.OrdinalIgnoreCase));
         }
 
         public static void Save(Employee employee)

@@ -11,21 +11,21 @@ namespace Paylocity.Controllers
     [Route("api/[controller]")]
     public class PeopleController : Controller
     {
-        // GET api/values
+        // GET api/people
         [HttpGet]
         public IEnumerable<Employee> Get()
         {
             return EmployeeDAL.Employees;
         }
 
-        // GET api/values/5
-        [HttpGet("{Id}")]
-        public Employee Get(int id)
-        {
-            return EmployeeDAL.Get(id);
-        }
+        //GET api/people/5
+        //[HttpGet("{Id}")]
+        //public Employee Get(int id)
+        //{
+        //    return EmployeeDAL.Get(id);
+        //}
 
-        // GET api/values/LastName
+        [Route("LastName")]
         [HttpGet("{lastName}")]
         public IEnumerable<Employee> Get(string lastName)
         {
@@ -47,7 +47,7 @@ namespace Paylocity.Controllers
             EmployeeDAL.Save((int)employee.Id, employee);
         }
 
-        // DELETE api/values/5
+        // DELETE api/people/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

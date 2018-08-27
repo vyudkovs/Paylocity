@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+/*eslint-disable */
 class Rules extends Component {
     constructor(props) {
         super(props);
         this.state = { rule: [] }
         fetch('http://localhost:3002/api/rules/' + this.props.id, {
+        //fetch('http://localhost:58118/api/rules/' + this.props.id, {
             method: 'GET',
             cache: "no-cache",
             redirect: "follow",

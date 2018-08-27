@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Person from './Person';
 import "./App.css";
+/*eslint-disable */
 class Employee extends Component {
     constructor(props) {
         super(props);

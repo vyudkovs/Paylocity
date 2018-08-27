@@ -19,7 +19,7 @@
 }
 
 .Rule {
-    font-size: 0.6em;
+    font-size: 0.9em;
     font-style: italic;
     margin-top: 10px;
 }
@@ -31,6 +31,17 @@
     margin-right: 20px;
 }
 
+.Employees input {
+    width: 50%;
+}
+
+.Employees .Go {
+    margin-left:-20px;
+}
+
+.Employees .Top {
+    text-align:center;
+}
 .Employees button {
     margin-left: -20px;
 }
@@ -40,7 +51,8 @@
 }
 
 .Employees .Person {
-    margin-left:0px;
+    margin-left: 0px;
+    text-decoration: underline;
 }
 
 .Employee li .Person {
@@ -56,6 +68,10 @@
 .Person {
     font-size: 1.5em;
     cursor: pointer;
+}
+
+.Person input {
+    width:auto;
 }
 
 @keyframes App-logo-spin {

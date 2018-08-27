@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import "./App.css";
 import Employee from './Employee';
 import Rules from './Rules';
+/*eslint-disable */
 class Employees extends Component {
     constructor() {
         super();
-        this.state = { employees: [] };
+        this.state = { search: '', employees: [] };
         this.Url = 'http://localhost:3002/api';
+        //this.Url = 'http://localhost:58118/api';
     }
 
     //put put or post
@@ -63,6 +65,24 @@ class Employees extends Component {
         }
     }
 
+    Search = () => {
+        debugger;
+        fetch(this.Url + '/People/' + this.state.search, {
+            method: 'GET',
+            cache: "no-cache",
+            redirect: "follow",
+            referrer: "no-referrer",
+            credentials: "same-origin",
+            headers: {
+                "Content-type": "application/json; charset=UTF-8",
+            },
+        }).then(response => {
+            return response.json();
+        }).then(people => {
+            this.setState({ employees: people })
+        });
+    }
+
     //this gets all employees.  Obviously in real life we would not do that on loan: paging or lazy loading or combination thereof would work
     Get = () => {
         fetch(this.Url + '/People', {
@@ -81,12 +101,18 @@ class Employees extends Component {
             });
     }
 
+    HandleSearch = (e) => {
+        let search = e.target.value;
+        this.setState(() => ({ search: search }));
+    }
+
     render() {
         if (this.state.employees.length == 0) {
             this.Get();
         }
       return (
           <div className="Employees">
+              <div className="Top" value={this.state.search} onChange={this.HandleSearch.bind(this)}><input /><button onClick={this.Search.bind(this)} className="Go">GO</button></div>
               <div className="Status">{this.state.status}</div>
               <ul>
                   {this.state.employees.map(employee => {
