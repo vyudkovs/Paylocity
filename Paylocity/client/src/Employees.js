@@ -6,8 +6,7 @@ class Employees extends Component {
     constructor() {
         super();
         this.state = { employees: [] };
-        //this.Url = 'http://localhost:3002/api';
-        this.Url = 'http://localhost:58118/api';
+        this.Url = 'http://localhost:3002/api';
     }
 
     //put put or post
