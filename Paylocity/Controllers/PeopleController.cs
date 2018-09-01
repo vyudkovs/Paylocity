@@ -7,6 +7,9 @@ using System.Collections.Generic;
 
 namespace Paylocity.Controllers
 {
+    /// <summary>
+    /// Controller exposing restful calls for crud functionality
+    /// </summary>
     [EnableCors("CorsPolicy")]
     [Route("api/[controller]")]
     public class PeopleController : Controller
@@ -18,13 +21,6 @@ namespace Paylocity.Controllers
             return EmployeeDAL.Employees;
         }
 
-        //GET api/people/5
-        //[HttpGet("{Id}")]
-        //public Employee Get(int id)
-        //{
-        //    return EmployeeDAL.Get(id);
-        //}
-
         [Route("LastName")]
         [HttpGet("{lastName}")]
         public IEnumerable<Employee> Get(string lastName)
@@ -32,14 +28,14 @@ namespace Paylocity.Controllers
             return EmployeeDAL.Get(lastName);
         }
 
-        // POST api/person
+        // POST api/people/employee
         [HttpPost]
         public void Post([FromBody]Employee employee)
         {
             EmployeeDAL.Save(employee);
         }
 
-        // PUT api/employee
+        // PUT api/people/employee
         [HttpPut()]
         public void Put([FromBody]Employee employee)
         {
@@ -47,7 +43,7 @@ namespace Paylocity.Controllers
             EmployeeDAL.Save((int)employee.Id, employee);
         }
 
-        // DELETE api/people/5
+        // DELETE api/people/id
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

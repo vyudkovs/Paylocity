@@ -7,18 +7,19 @@ using System.Collections.Generic;
 
 namespace Paylocity.Controllers
 {
+
+    /// <summary>
+    /// Controller exposing restful calls for crud functionality
+    /// </summary>
     [EnableCors("CorsPolicy")]
     [Route("api/[controller]")]
     public class RulesController : Controller
     {
-        // GET api/RulesController/5
+        // GET api/Rules/id
         [HttpGet("{Id}")]
         public Cost Get(int id)
         {
-            //get employee
             Employee employee = EmployeeDAL.Get(id);
-
-            //start rule engine for that one employee
             RuleEngine ruleEngine = new RuleEngine(employee);
 
 

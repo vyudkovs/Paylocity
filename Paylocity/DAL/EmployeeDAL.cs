@@ -5,8 +5,15 @@ using System.Linq;
 
 namespace Paylocity.DAL
 {
+    /// <summary>
+    /// Data access layer
+    /// Ids for employees and persons are shared: my vision that they would share a table in the database
+    /// </summary>
     public static class EmployeeDAL
     {
+        /// <summary>
+        /// Employees list
+        /// </summary>
         public static List<Employee> Employees { get; private set; }
 
         //there is a race condition here: normally would be wrapped in a db transaction or else made thread safe
@@ -28,6 +35,9 @@ namespace Paylocity.DAL
             return people.Max(p => p.Id ?? 0);
         }
 
+        /// <summary>
+        /// set up initial fake data
+        /// </summary>
         static EmployeeDAL()
         {
             EmployeeDAL.Employees = new List<Employee>
@@ -69,21 +79,40 @@ namespace Paylocity.DAL
             };
         }
 
+        /// <summary>
+        ///   get employess by id
+        /// </summary>
+        /// <param name="id">employee id</param>
+        /// <returns></returns>
         public static Employee Get(int id)
         {
             return Employees.FirstOrDefault(e => e.Id == id);
         }
 
+        /// <summary>
+        /// get employees by lastName
+        /// </summary>
+        /// <param name="lastName">employee lastName</param>
+        /// <returns></returns>
         public static IEnumerable<Employee> Get(string lastName)
         {
             return Employees.Where(person => person.LastName.StartsWith(lastName, StringComparison.OrdinalIgnoreCase));
         }
 
+        /// <summary>
+        /// save employee
+        /// </summary>
+        /// <param name="employee"></param>
         public static void Save(Employee employee)
         {
             Employees.Add(SetEmployeeDependentIdsIfNeeded(null, employee));
         }
 
+        /// <summary>
+        /// update employee
+        /// </summary>
+        /// <param name="id">employee id</param>
+        /// <param name="employee">employee</param>
         public static void Save(int id, Employee employee)
         {
             var employeeExisting = Employees.FirstOrDefault(e => e.Id == employee.Id);
@@ -92,6 +121,10 @@ namespace Paylocity.DAL
             Employees[Employees.IndexOf(employeeExisting)] = employee;
         }
 
+        /// <summary>
+        /// delete employee
+        /// </summary>
+        /// <param name="id">employee id</param>
         public static void Delete(int id)
         {
             var employeeExisting = Employees.FirstOrDefault(e => e.Id == id);

@@ -4,6 +4,8 @@ namespace Paylocity.BusinessRules
 {
     public class PaycheckRule: IRule
     {
+        //this is a gross simplification.  _payAmount should come from employee
+        private const decimal _payAmount = 2000m;
         private Employee _employee;
         public PaycheckRule(Employee employee)
         {
@@ -11,15 +13,18 @@ namespace Paylocity.BusinessRules
         }
         public string GetName()
         {
-            return "Paycheck amout";
+            return "Paycheck amount";
         }
-        public bool IsApplicable()
+        public bool IsApplicable
         {
-            return _employee != null; //here's where we could check if employee opted out.  as is everyone gets one
+            get
+            {
+                return _employee != null;
+            }
         }
-        public decimal UseRule()
+        public decimal ApplyRule()
         {
-            return 2000m;
+            return _payAmount;
         }
     }
 }

@@ -1,5 +1,8 @@
 ﻿namespace Paylocity.Models
 {
+    /// <summary>
+    /// Person exposes name properties
+    /// </summary>
     public class Person
     {
         public int? Id { get; set; }

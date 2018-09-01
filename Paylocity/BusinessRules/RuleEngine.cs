@@ -4,6 +4,9 @@ using System.Collections.Generic;
 
 namespace Paylocity.BusinessRules
 {
+    /// <summary>
+    /// RuleEngine offers a compilation of all rules
+    /// </summary>
     public class RuleEngine
     {
         public RuleEngine(Employee employee)
@@ -22,7 +25,7 @@ namespace Paylocity.BusinessRules
             var cost = new Cost();
             foreach (var rule in _rules)
             {
-                var subtotal = rule.IsApplicable() ? rule.UseRule() : 0m;
+                var subtotal = rule.IsApplicable ? rule.ApplyRule() : 0m;
                 cost.Total += subtotal;
                 cost.Items.Add(new Item() { Name = rule.GetName(), Subtotal = subtotal });
             }

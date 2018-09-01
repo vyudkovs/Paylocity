@@ -9,3 +9,14 @@ c:\test\Paylocity\Paylocity\obj\Debug\netcoreapp2.0\Paylocity.AssemblyInfoInputs
 c:\test\Paylocity\Paylocity\obj\Debug\netcoreapp2.0\Paylocity.AssemblyInfo.cs
 c:\test\Paylocity\Paylocity\obj\Debug\netcoreapp2.0\Paylocity.dll
 c:\test\Paylocity\Paylocity\obj\Debug\netcoreapp2.0\Paylocity.pdb
+C:\test\p2\Paylocity\Paylocity\bin\Debug\netcoreapp2.0\Paylocity.deps.json
+C:\test\p2\Paylocity\Paylocity\bin\Debug\netcoreapp2.0\Paylocity.runtimeconfig.json
+C:\test\p2\Paylocity\Paylocity\bin\Debug\netcoreapp2.0\Paylocity.runtimeconfig.dev.json
+C:\test\p2\Paylocity\Paylocity\bin\Debug\netcoreapp2.0\Paylocity.dll
+C:\test\p2\Paylocity\Paylocity\bin\Debug\netcoreapp2.0\Paylocity.pdb
+C:\test\p2\Paylocity\Paylocity\obj\Debug\netcoreapp2.0\Paylocity.csprojResolveAssemblyReference.cache
+C:\test\p2\Paylocity\Paylocity\obj\Debug\netcoreapp2.0\Paylocity.csproj.CoreCompileInputs.cache
+C:\test\p2\Paylocity\Paylocity\obj\Debug\netcoreapp2.0\Paylocity.AssemblyInfoInputs.cache
+C:\test\p2\Paylocity\Paylocity\obj\Debug\netcoreapp2.0\Paylocity.AssemblyInfo.cs
+C:\test\p2\Paylocity\Paylocity\obj\Debug\netcoreapp2.0\Paylocity.dll
+C:\test\p2\Paylocity\Paylocity\obj\Debug\netcoreapp2.0\Paylocity.pdb

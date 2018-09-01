@@ -12640,15 +12640,12 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\test\\Paylocity\\Paylocity\\Paylocity.csproj",
+      "projectUniqueName": "C:\\test\\p2\\Paylocity\\Paylocity\\Paylocity.csproj",
       "projectName": "Paylocity",
-      "projectPath": "C:\\test\\Paylocity\\Paylocity\\Paylocity.csproj",
+      "projectPath": "C:\\test\\p2\\Paylocity\\Paylocity\\Paylocity.csproj",
       "packagesPath": "C:\\Users\\vyudk\\.nuget\\packages\\",
-      "outputPath": "C:\\test\\Paylocity\\Paylocity\\obj\\",
+      "outputPath": "C:\\test\\p2\\Paylocity\\Paylocity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
