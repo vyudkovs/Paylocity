@@ -11,11 +11,11 @@ Please run this on a machine that has VS and yarn installed.
 2.  yarn install
 3.  yarn start
 
-give it time to compile the project and start the client and server
+Give it time to compile the project and start the client and server.  The latter could take a few minutes to install...
 
 Future improvements
 1.  add ability to add/edit/delete dependents
 2.  calculate totals for newly added employees without refreshing
-3.  write unit tests
+3.  write unit tests (ui and server)
 4.  persist data
 5.  ci/cd
