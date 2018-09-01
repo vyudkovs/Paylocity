@@ -8,7 +8,6 @@ class Employees extends Component {
         super();
         this.state = { search: '', employees: [] };
         this.Url = 'http://localhost:3002/api';
-        //this.Url = 'http://localhost:58118/api';
     }
 
     //put put or post

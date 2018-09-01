@@ -5,7 +5,6 @@ class Rules extends Component {
         super(props);
         this.state = { rule: [] }
         fetch('http://localhost:3002/api/rules/' + this.props.id, {
-        //fetch('http://localhost:58118/api/rules/' + this.props.id, {
             method: 'GET',
             cache: "no-cache",
             redirect: "follow",
